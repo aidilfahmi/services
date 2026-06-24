@@ -1,0 +1,74 @@
+{
+  "chain_name": "BlockX",
+  "chain_id": "blockx_12345-1",
+  "website": "https://blockxnet.com",
+  "github": "https://github.com/blockxnet",
+  "twitter": "https://twitter.com/blockxnet",
+  "telegram": "https://t.me/blockxnet",
+  "rpc": {
+    "url": "https://blockx-mainnet-rpc.itrocket.net",
+    "description": "archive"
+  },
+  "api": {
+    "url": "https://blockx-mainnet-api.itrocket.net"
+  },
+  "grpc": {
+    "url": "blockx-mainnet-grpc.itrocket.net:443"
+  },
+  "peers": [
+    {
+      "id": "ed0e36c57122184ab05b6c635b2f2adf592bfa0c",
+      "address": "blockx-mainnet-peer.itrocket.net",
+      "port": 61657
+    }
+  ],
+  "seeds": [
+    {
+      "id": "f19d9e0f8d48119aa4cafde65de923ae2c29181a",
+      "address": "blockx-mainnet-seed.itrocket.net",
+      "port": 61656
+    }
+  ],
+  "snapshot": {
+    "pruned": true,
+    "url": "https://server-3.itrocket.net/mainnet/blockx/null",
+    "db_backend": "goleveldb",
+    "updated_frequency": "every 4h"
+  },
+  "genesis": {
+    "url": "https://server-3.itrocket.net/mainnet/blockx/genesis.json"
+  },
+  "addrbook": {
+    "url": "https://server-3.itrocket.net/mainnet/blockx/addrbook.json",
+    "updated_frequency": "1h"
+  },
+  "installation": {
+    "binary_name": "blockxd",
+    "binary_repo": "https://github.com/blockxnet/blockx",
+    "binary_version": "v1.0.0",
+    "min_hardware": {
+      "cpu_cores": 8,
+      "ram_gb": 16,
+      "storage_gb": 250
+    },
+    "go_version": "1.22.10",
+    "default_node_name": "BlockX-Node",
+    "default_wallet": "wallet",
+    "default_port": "26",
+    "pruning": {
+      "type": "custom",
+      "keep_recent": "100",
+      "interval": "19"
+    },
+    "indexer": "null",
+    "minimum_gas_price": "0.025ublock",
+    "prometheus_enabled": true,
+    "auto_install_url": "https://your-domain.com/api/mainnet/blockx/autoinstall/",
+    "validator_defaults": {
+      "commission_rate": "0.1",
+      "commission_max_rate": "0.2",
+      "commission_max_change_rate": "0.01",
+      "min_self_delegation": "1"
+    }
+  }
+}
